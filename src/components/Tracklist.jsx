@@ -1,7 +1,11 @@
-function Tracklist() {
+import Track from "./Track";
+
+function Tracklist({ tracks }) {
   return (
     <div>
-      <h2>Tracklist</h2>
+      {tracks.map((track) => (
+        <Track key={track.id} track={track} />
+      ))}
     </div>
   );
 }

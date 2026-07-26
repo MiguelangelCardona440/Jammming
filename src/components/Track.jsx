@@ -1,7 +1,10 @@
-function Track() {
+function Track({ track }) {
   return (
     <div>
-      <p>Song Name - Artist</p>
+      <h3>{track.name}</h3>
+      <p>
+        {track.artist} | {track.album}
+      </p>
     </div>
   );
 }
