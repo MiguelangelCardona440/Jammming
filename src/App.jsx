@@ -66,6 +66,8 @@ function App() {
     setPlaylistTrack(newPlaylist);
   };
 
+  const trackURIs = playlistTrack.map((track) => track.uri);
+
   return (
     <div>
       <h1>Jammming</h1>

@@ -5,6 +5,7 @@ function Playlist({
   playlistTracks,
   onNameChange,
   onTrackRemove,
+  isRemoval,
 }) {
   return (
     <div>
