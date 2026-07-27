@@ -1,7 +1,23 @@
-function Playlist() {
+import Tracklist from "./Tracklist";
+
+function Playlist({
+  playlistName,
+  playlistTracks,
+  onNameChange,
+  onTrackRemove,
+}) {
   return (
     <div>
-      <h2>Playlist</h2>
+      <input
+        value={playlistName}
+        onChange={(e) => onNameChange(e.target.value)}
+      />
+      <Tracklist
+        tracks={playlistTracks}
+        onTrackRemove={onTrackRemove}
+        isRemoval={true}
+      />
+
       <button>Save To Spotify</button>
     </div>
   );
