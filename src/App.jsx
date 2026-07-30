@@ -13,12 +13,14 @@ function App() {
       name: "song 1",
       artist: "artist 1",
       album: "album 1",
+      uri: "spotify:track:111",
     },
     {
       id: 2,
       name: "song 2",
       artist: "artist 2",
       album: "album 2",
+      uri: "spotify:track:112",
     },
   ]);
 
@@ -28,18 +30,21 @@ function App() {
       name: "song 1",
       artist: "artist 1",
       album: "album 1",
+      uri: "spotify:track:111",
     },
     {
       id: 2,
       name: "song 2",
       artist: "artist 2",
       album: "album 2",
+      uri: "spotify:track:112",
     },
     {
       id: 3,
       name: "song 3",
       artist: "artist 3",
       album: "album 3",
+      uri: "spotify:track:113",
     },
   ];
 
@@ -67,6 +72,7 @@ function App() {
   };
 
   const trackURIs = playlistTrack.map((track) => track.uri);
+  console.log(trackURIs);
 
   return (
     <div>
