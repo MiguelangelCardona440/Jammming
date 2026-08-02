@@ -41,7 +41,7 @@ npm run dev
 
 ## 🤖 AI Assistance
 
-AI was used as a learning, debugging, and documentation tool during the development of this project. All features were reviewed, tested, and integrated while learning the
+AI was used as a learning, debugging, and productivity tool throughout the development of this project. It helped me understand React concepts, troubleshoot issues, and learn how to work with the Spotify Web API and OAuth PKCE authentication. All code was reviewed, tested, and integrated as part of my learning journey.
 
 ## 📄 License
 
