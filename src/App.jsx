@@ -71,20 +71,24 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Jammming</h1>
+    <div className="app">
+      <h1 className="app-title">
+        Ja<span>mmm</span>ing
+      </h1>
 
       <SearchBar onSearch={search} />
 
-      <SearchResults searchResults={searchResults} addTrack={addTrack} />
+      <div className="content">
+        <SearchResults searchResults={searchResults} addTrack={addTrack} />
 
-      <Playlist
-        playlistName={playlistName}
-        playlistTracks={playlistTracks}
-        onNameChange={handleNameChange}
-        onTrackRemove={removeTrack}
-        onSave={savePlaylist}
-      />
+        <Playlist
+          playlistName={playlistName}
+          playlistTracks={playlistTracks}
+          onNameChange={handleNameChange}
+          onTrackRemove={removeTrack}
+          onSave={savePlaylist}
+        />
+      </div>
     </div>
   );
 }

@@ -10,21 +10,24 @@ function SearchBar({ onSearch }) {
     onSearch(term);
   };
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Search for a song"
-        value={term}
-        onChange={(event) => setTerm(event.target.value)}
-        onKeyDown={(event) => {
-          if (event.key === "Enter") {
-            handleSearch();
-          }
-        }}
-      />
-      <button type="button" onClick={handleSearch}>
-        Search
-      </button>
+    <div className="search-bar">
+      <div className="search-control">
+        <input
+          type="text"
+          placeholder="Search artists, songs or albums"
+          value={term}
+          onChange={(event) => setTerm(event.target.value)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") {
+              handleSearch();
+            }
+          }}
+        />
+
+        <button className="search-button" type="button" onClick={handleSearch}>
+          Search
+        </button>
+      </div>
     </div>
   );
 }

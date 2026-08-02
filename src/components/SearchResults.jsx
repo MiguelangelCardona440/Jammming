@@ -2,8 +2,8 @@ import TrackList from "./Tracklist";
 
 function SearchResults({ searchResults, addTrack }) {
   return (
-    <div>
-      <h2>Search Result</h2>
+    <div className="panel">
+      <h2>Search Results</h2>
       <TrackList tracks={searchResults} addTrack={addTrack} isRemoval={false} />
     </div>
   );

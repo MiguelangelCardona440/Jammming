@@ -8,8 +8,9 @@ function Playlist({
   onSave,
 }) {
   return (
-    <div>
+    <div className="panel playlist-panel">
       <input
+        className="playlist-name"
         value={playlistName}
         placeholder="Enter playlist name"
         onChange={(event) => onNameChange(event.target.value)}
@@ -20,8 +21,8 @@ function Playlist({
         isRemoval={true}
       />
 
-      <button type="button" onClick={onSave}>
-        Save To Spotify
+      <button className="save-button" type="button" onClick={onSave}>
+        <span>Save to Spotify</span>
       </button>
     </div>
   );

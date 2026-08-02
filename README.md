@@ -1,16 +1,52 @@
-# React + Vite
+## 🎵 Jammming
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Jammming is a React application that allows users to search for songs on Spotify and create custom playlists that can be saved directly to their Spotify account.
 
-Currently, two official plugins are available:
+## 📸 Screenshot
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Jammming Home](./screenshots/image.png)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 Search songs using the Spotify Web API
+- ➕ Add songs to a custom playlist
+- ➖ Remove songs from a playlist
+- ✏️ Rename playlists
+- 💾 Save playlists directly to Spotify
+- 🔐 Spotify OAuth 2.0 PKCE Authentication
 
-## Expanding the Oxlint configuration
+## 🛠️ Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS3
+- Spotify Web API
+- OAuth 2.0 PKCE
+
+## ⚙️ Installation
+
+```bash
+npm install
+npm run dev
+```
+
+## 🚀 Future Improvements
+
+- Loading animation while searching and saving
+- Multiple playlist support
+- Playlist cover images
+- Improved responsive design
+- Audio preview for tracks
+
+## 🤖 AI Assistance
+
+AI was used as a learning, debugging, and documentation tool during the development of this project. All features were reviewed, tested, and integrated while learning the
+
+## 📄 License
+
+This project was created for educational purposes as part of my React learning journey.underlying concepts.
+
+## 👨‍💻 Author
+
+**Miguelangel Cardona**
