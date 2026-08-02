@@ -5,13 +5,14 @@ function Playlist({
   playlistTracks,
   onNameChange,
   onTrackRemove,
-  isRemoval,
+  onSave,
 }) {
   return (
     <div>
       <input
         value={playlistName}
-        onChange={(e) => onNameChange(e.target.value)}
+        placeholder="Enter playlist name"
+        onChange={(event) => onNameChange(event.target.value)}
       />
       <Tracklist
         tracks={playlistTracks}
@@ -19,7 +20,9 @@ function Playlist({
         isRemoval={true}
       />
 
-      <button>Save To Spotify</button>
+      <button type="button" onClick={onSave}>
+        Save To Spotify
+      </button>
     </div>
   );
 }

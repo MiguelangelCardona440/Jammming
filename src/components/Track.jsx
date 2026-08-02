@@ -1,14 +1,22 @@
 function Track({ track, addTrack, onTrackRemove, isRemoval }) {
+  const { name, artist, album } = track;
+
   return (
     <div>
-      <h3>{track.name} </h3>
+      <h3>{name}</h3>
+
       <p>
-        {track.artist} | {track.album}
+        {artist} | {album}
       </p>
+
       {isRemoval ? (
-        <button onClick={() => onTrackRemove(track)}>-</button>
+        <button type="button" onClick={() => onTrackRemove(track)}>
+          -
+        </button>
       ) : (
-        <button onClick={() => addTrack(track)}>+</button>
+        <button type="button" onClick={() => addTrack(track)}>
+          +
+        </button>
       )}
     </div>
   );
